@@ -1,49 +1,63 @@
 package com.vildanova.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
+import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-import static com.vildanova.tests.TestBase.credentials;
 
 public class AuthorizationPage {
 
     private SelenideElement
-            form=$("#header_user_menu_registration_link"),
+            form = $("#header_user_menu_registration_link"),
             login = $(".js-email-input"),
-            password=$("#password-enter"),
-            submit=$("[type=submit]"),
-            profile=$(".title__h1");
+            password = $("#password-enter"),
+            submit = $("[type=submit]"),
+            profile = $(".title__h1"),
+            passwordError = $(".js-password-error");
 
-    public void openPage() {
-        open("https://www.sela.ru/");
-        $("[text=Да, все верно]").click();
-    }
-
+    @Step("Открыть форму авторизации")
     public AuthorizationPage openFormOfAuthorization() {
         form.click();
         return this;
     }
 
-    public AuthorizationPage enterLogin(){
-        login.setValue(credentials.login());
+    @Step("Ввести логин")
+    public AuthorizationPage enterLogin(String valueOfLogin) {
+        login.setValue(valueOfLogin);
         return this;
     }
 
-    public AuthorizationPage enterPassword(){
-        password.setValue(credentials.password());
+    @Step("Ввести пароль")
+    public AuthorizationPage enterPassword(String valueOfPassword) {
+        password.setValue(valueOfPassword);
         return this;
     }
 
-    public AuthorizationPage enter(){
+    @Step("Нажать на кнопку Войти")
+    public AuthorizationPage enter() {
         submit.click();
         return this;
     }
 
-    public void checkValidAuthorization(){
+    @Step("Проверить умпешную авторизацию")
+    public void checkValidAuthorization() {
         profile.shouldHave(text("Личный кабинет"));
+    }
+
+    @Step("Проверить обязательность поля Логина")
+    public void checkEmptyLoginOfAuthorization() {
+        login.shouldHave(attribute("required"));
+    }
+
+    @Step("Проверить обязательность поля Пароль")
+    public void checkEmptyPasswordOfAuthorization() {
+        password.shouldHave(attribute("required"));
+    }
+
+    @Step("Проверить вывод сообщения при вводе неверного логина или пароля")
+    public void checkWrongLoginOrPasswordOfAuthorization() {
+        passwordError.shouldHave(text("Неправильное имя пользователя или пароль."));
     }
 }

@@ -3,6 +3,7 @@ package com.vildanova.tests;
 import com.vildanova.pages.AuthorizationPage;
 import com.vildanova.pages.OpenPage;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -19,6 +20,7 @@ public class AuthorizationTests extends TestBase {
     AuthorizationPage authorizationPage = new AuthorizationPage();
 
     @Test
+    @Tag("Authorization")
     @Feature("Authorization")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")
@@ -45,6 +47,7 @@ public class AuthorizationTests extends TestBase {
     }
 
     @Test
+    @Tag("Authorization")
     @Feature("Authorization")
     @Story("Test number two")
     @Owner("Vildanova Kamilya")
@@ -65,6 +68,7 @@ public class AuthorizationTests extends TestBase {
     }
 
     @Test
+    @Tag("Authorization")
     @Feature("Authorization")
     @Story("Test number three")
     @Owner("Vildanova Kamilya")
@@ -85,6 +89,7 @@ public class AuthorizationTests extends TestBase {
     }
 
     @Test
+    @Tag("Authorization")
     @Feature("Authorization")
     @Story("Test number four")
     @Owner("Vildanova Kamilya")
@@ -111,6 +116,7 @@ public class AuthorizationTests extends TestBase {
     }
 
     @Test
+    @Tag("Authorization")
     @Feature("Authorization")
     @Story("Test number five")
     @Owner("Vildanova Kamilya")
@@ -137,6 +143,7 @@ public class AuthorizationTests extends TestBase {
     }
 
     @ParameterizedTest
+    @Tag("Authorization")
     @MethodSource("argsProviderFactory")
     @Feature("Authorization")
     @Story("Test number six")

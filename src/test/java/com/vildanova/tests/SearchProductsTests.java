@@ -3,6 +3,7 @@ package com.vildanova.tests;
 import com.vildanova.pages.OpenPage;
 import com.vildanova.pages.SearchProductsPage;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.vildanova.tests.TestData.dress;
@@ -13,6 +14,7 @@ public class SearchProductsTests extends TestBase{
     SearchProductsPage searchProductsPage = new SearchProductsPage();
 
     @Test
+    @Tag("Title")
     @Feature("Title")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")

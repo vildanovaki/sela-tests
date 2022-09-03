@@ -3,6 +3,7 @@ package com.vildanova.tests;
 import com.vildanova.pages.OpenPage;
 import com.vildanova.pages.TitlePage;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -17,6 +18,7 @@ public class TitleTests extends TestBase {
             "Sela"
     })
     @ParameterizedTest(name = "Check title of site")
+    @Tag("Title")
     @Feature("Title")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")

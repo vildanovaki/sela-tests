@@ -3,6 +3,7 @@ package com.vildanova.tests;
 import com.vildanova.pages.CheckTitleOfPage;
 import com.vildanova.pages.OpenPage;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class CheckTitleOfPageTests {
@@ -11,6 +12,7 @@ public class CheckTitleOfPageTests {
     CheckTitleOfPage checkTitleOfPage = new CheckTitleOfPage();
 
     @Test
+    @Tag("Title")
     @Feature("Title")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")

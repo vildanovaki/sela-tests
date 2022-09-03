@@ -32,3 +32,21 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task authorization_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "Authorization"
+    }
+}
+
+task add_product_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "Add product"
+    }
+}
+
+task check_titles_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "Title"
+    }
+}

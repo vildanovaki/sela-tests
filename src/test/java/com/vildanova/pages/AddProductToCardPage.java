@@ -55,7 +55,7 @@ public class AddProductToCardPage {
         return this;
     }
 
-    @Step("Проверить наличие одного товара в корзине ")
+    @Step("Проверить наличие одного товара в корзине")
     public void checkHeading() {
         String expectedTitle = "Товары, 1 шт.";
         String actualTitle = oneProduct.getText();

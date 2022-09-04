@@ -18,7 +18,6 @@ public class AddProductToCardPage {
             card=$(".header__user-menu-item"),
             oneProduct=$(".cart-label__item");
 
-
     @Step("Нажать на кнопку Меню - бургер")
     public AddProductToCardPage openMenu() {
         menu.click();

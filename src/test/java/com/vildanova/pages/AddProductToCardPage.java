@@ -4,7 +4,8 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AddProductToCardPage {
@@ -13,10 +14,10 @@ public class AddProductToCardPage {
             menu = $(".header__burger-icon"),
             subcategory = $(By.xpath("//*[text() = 'Топы']")),
             category = $$(".js-header-sub-menu-open").get(0),
-            product=$(By.xpath("//div[@id='products_list']/ul/li[1]")),
-            buttonToAdd=$(".single_add_to_cart_button"),
-            card=$(".header__user-menu-item"),
-            oneProduct=$(".cart-label__item");
+            product = $(By.xpath("//div[@id='products_list']/ul/li[1]")),
+            buttonToAdd = $(".single_add_to_cart_button"),
+            card = $(".header__user-menu-item"),
+            oneProduct = $(".cart-label__item");
 
     @Step("Нажать на кнопку Меню - бургер")
     public AddProductToCardPage openMenu() {
@@ -37,7 +38,7 @@ public class AddProductToCardPage {
     }
 
     @Step("Выбрать товар")
-    public AddProductToCardPage chooseProduct(){
+    public AddProductToCardPage chooseProduct() {
         product.click();
         return this;
     }
@@ -56,8 +57,8 @@ public class AddProductToCardPage {
 
     @Step("Проверить наличие одного товара в корзине ")
     public void checkHeading() {
-        String expectedTitle="Товары, 1 шт.";
-        String actualTitle= oneProduct.getText();
+        String expectedTitle = "Товары, 1 шт.";
+        String actualTitle = oneProduct.getText();
         assertThat(actualTitle).contains(expectedTitle);
     }
 }

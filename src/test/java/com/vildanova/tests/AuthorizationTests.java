@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static com.vildanova.tests.TestData.passwordFaker;
+import static com.vildanova.tests.TestData.*;
 
 public class AuthorizationTests extends TestBase {
 
@@ -174,10 +174,10 @@ public class AuthorizationTests extends TestBase {
     static Stream<Arguments> argsProviderFactory() {
         return Stream.of(
                 Arguments.of(
-                        "vildanova-kamilya99@yandex.ru", passwordFaker
+                        "vildanova-kamilya99@yandex.ru", firstPasswordFaker
                 ),
                 Arguments.of(
-                        "vildanova-kamilya99@yandex.ru", passwordFaker
+                        "vildanova-kamilya99@yandex.ru", secondPasswordFaker
                 )
         );
     }

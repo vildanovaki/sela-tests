@@ -1,6 +1,5 @@
 package com.vildanova.tests;
 
-import com.vildanova.pages.CheckTitleOfPage;
 import com.vildanova.pages.FavoritePage;
 import com.vildanova.pages.OpenPage;
 import io.qameta.allure.*;

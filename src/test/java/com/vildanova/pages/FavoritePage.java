@@ -10,19 +10,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FavoritePage {
 
     private SelenideElement
-            buttonOfFavorite= $("#header_user_menu_favorite_link"),
+            buttonOfFavorite = $("#header_user_menu_favorite_link"),
             emptyFavorite = $(".title");
 
     @Step("Открыть страницу Избранное")
-    public FavoritePage openFavorite(){
+    public FavoritePage openFavorite() {
         buttonOfFavorite.click();
         return this;
     }
 
     @Step("Проверить заголовок пустой страницы Избранное")
     public void checkEmptyFavorites() {
-        String expectedTitle="Сейчас у вас ничего нет в «Избранном»";
-        String actualTitle= emptyFavorite.getText();
+        String expectedTitle = "Сейчас у вас ничего нет в «Избранном»";
+        String actualTitle = emptyFavorite.getText();
         assertThat(actualTitle).isEqualTo(expectedTitle);
     }
 }

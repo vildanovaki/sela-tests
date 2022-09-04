@@ -6,7 +6,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class AddToCardTests extends TestBase{
+public class AddToCardTests extends TestBase {
 
     OpenPage openPage = new OpenPage();
     AddProductToCardPage addProductToCardPage = new AddProductToCardPage();

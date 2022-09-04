@@ -8,5 +8,6 @@ public class TestData {
 
     public static String
             dress = "Платье",
-            passwordFaker = faker.internet().password();
+            firstPasswordFaker = faker.internet().password(),
+            secondPasswordFaker = faker.internet().password();
 }

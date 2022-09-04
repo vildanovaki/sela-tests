@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.vildanova.tests.TestData.dress;
 
-public class SearchProductsTests extends TestBase{
+public class SearchProductsTests extends TestBase {
 
     OpenPage openPage = new OpenPage();
     SearchProductsPage searchProductsPage = new SearchProductsPage();
@@ -25,7 +25,7 @@ public class SearchProductsTests extends TestBase{
             "3) Нажать на иконку поиска \n" +
             "4) Ввести в поле поиска значение \n" +
             "5) Проверить вывод совпадений по введенным значениям в поле поиска.")
-    void searchProductTest(){
+    void searchProductTest() {
         openPage
                 .openPage()
                 .chooseCity();

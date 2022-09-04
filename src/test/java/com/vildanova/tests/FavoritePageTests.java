@@ -7,7 +7,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class FavoritePageTests {
+public class FavoritePageTests extends TestBase {
 
     OpenPage openPage = new OpenPage();
     FavoritePage favoritePage = new FavoritePage();

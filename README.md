@@ -28,30 +28,30 @@ ___
 
 ## Примеры используемых технологий:
 
-### :arrow_forward: В качестве CI системы использован Jenkins
+### :newspaper: В качестве CI системы использован Jenkins
 
 ![](images/mainJenkins.png)
 
-### :arrow_forward: Построение отчета в Allure Reports по результатам прогона
+### :newspaper: Построение отчета в Allure Reports по результатам прогона
 
 ![](images/mainAllure.png)
 
-### :arrow_forward: Для удобства представлена вся информация о тесте, которая была указана в аннотациях
+### :newspaper: Для удобства представлена вся информация о тесте, которая была указана в аннотациях
 
 ![](images/aboutTestAllure.png)
 
-### :arrow_forward: В качестве дополнительного отчета использован Allure TestOps
+### :newspaper: В качестве дополнительного отчета использован Allure TestOps
 
 ![](images/testOps.png)
 
-### :arrow_forward: История запусков тестов в Allure TestOps
+### :newspaper: История запусков тестов в Allure TestOps
 
 ![](images/launches.png)
 
-### :arrow_forward: По результату выполнения тестов отправляется уведомление в телеграм
+### :newspaper: По результату выполнения тестов отправляется уведомление в телеграм
 
 ![](images/telegram.png)
 
-### :arrow_forward: Видео прохождения теста - добавление товара в корзину
+### :newspaper: Видео прохождения теста - добавление товара в корзину
 
 ![](images/testExample.gif)

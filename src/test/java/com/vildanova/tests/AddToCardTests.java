@@ -12,7 +12,7 @@ public class AddToCardTests {
     AddProductToCardPage addProductToCardPage = new AddProductToCardPage();
 
     @Test
-    @Tag("Add product")
+    @Tag("AddProduct")
     @Feature("Add product")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")

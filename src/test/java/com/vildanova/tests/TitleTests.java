@@ -21,6 +21,7 @@ public class TitleTests extends TestBase {
     @ParameterizedTest(name = "Check title of site")
     @Tag("Title")
     @DisplayName("Checking the title of site")
+    @AllureId("12081")
     @Feature("Title")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")

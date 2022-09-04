@@ -14,6 +14,7 @@ public class FavoritePageTests extends TestBase {
 
     @Test
     @Tag("Title")
+    @AllureId("12082")
     @DisplayName("Check heading of empty favorite page")
     @Feature("Title")
     @Story("Test number one")

@@ -22,6 +22,7 @@ public class AuthorizationTests extends TestBase {
 
     @Test
     @Tag("Authorization")
+    @AllureId("12074")
     @DisplayName("Valid authorization")
     @Feature("Authorization")
     @Story("Test number one")
@@ -52,6 +53,7 @@ public class AuthorizationTests extends TestBase {
 
     @Test
     @Tag("Authorization")
+    @AllureId("12076")
     @DisplayName("Check required of login")
     @Feature("Authorization")
     @Story("Test number two")
@@ -74,6 +76,7 @@ public class AuthorizationTests extends TestBase {
 
     @Test
     @Tag("Authorization")
+    @AllureId("12078")
     @DisplayName("Check required of password")
     @Feature("Authorization")
     @Story("Test number three")
@@ -96,6 +99,7 @@ public class AuthorizationTests extends TestBase {
 
     @Test
     @Tag("Authorization")
+    @AllureId("12075")
     @DisplayName("Invalid authorization with wrong login")
     @Feature("Authorization")
     @Story("Test number four")
@@ -124,6 +128,7 @@ public class AuthorizationTests extends TestBase {
 
     @Test
     @Tag("Authorization")
+    @AllureId("12077")
     @DisplayName("Invalid authorization with wrong password")
     @Feature("Authorization")
     @Story("Test number five")
@@ -152,6 +157,7 @@ public class AuthorizationTests extends TestBase {
 
     @ParameterizedTest
     @Tag("Authorization")
+    @AllureId("12087")
     @DisplayName("Invalid authorization with wrong passwotd and parameterize arguments")
     @MethodSource("argsProviderFactory")
     @Feature("Authorization")

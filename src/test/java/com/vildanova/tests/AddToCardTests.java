@@ -14,6 +14,7 @@ public class AddToCardTests extends TestBase {
 
     @Test
     @Tag("AddProduct")
+    @AllureId("12079")
     @DisplayName("Add product to cart")
     @Feature("Add product")
     @Story("Test number one")

@@ -14,6 +14,7 @@ public class CheckTitleOfPageTests extends TestBase {
 
     @Test
     @Tag("Title")
+    @AllureId("12083")
     @DisplayName("Check title of page with choosing subcategory")
     @Feature("Title")
     @Story("Test number one")

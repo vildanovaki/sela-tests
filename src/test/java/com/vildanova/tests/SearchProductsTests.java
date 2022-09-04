@@ -16,6 +16,7 @@ public class SearchProductsTests extends TestBase {
 
     @Test
     @Tag("Title")
+    @AllureId("12080")
     @DisplayName("Search a product")
     @Feature("Title")
     @Story("Test number one")

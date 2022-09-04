@@ -16,7 +16,7 @@ public class AddProductToCardPage {
             product=$(By.xpath("//div[@id='products_list']/ul/li[1]")),
             buttonToAdd=$(".single_add_to_cart_button"),
             card=$(".header__user-menu-item"),
-            headingOfTitle=$(".cart-mesh__goods");
+            oneProduct=$(".cart-label__item");
 
 
     @Step("Нажать на кнопку Меню - бургер")
@@ -57,8 +57,8 @@ public class AddProductToCardPage {
 
     @Step("Проверить наличие одного товара в корзине ")
     public void checkHeading() {
-        String expectedTitle="Отправление 1";
-        String actualTitle= headingOfTitle.getText();
+        String expectedTitle="Товары, 1 шт.";
+        String actualTitle= oneProduct.getText();
         assertThat(actualTitle).contains(expectedTitle);
     }
 }

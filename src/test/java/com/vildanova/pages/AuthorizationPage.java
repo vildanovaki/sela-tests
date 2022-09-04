@@ -17,7 +17,7 @@ public class AuthorizationPage {
             submit = $("[type=submit]"),
             profile = $(".title__h1"),
             passwordError = $(".js-password-error"),
-            logout = $(By.linkText("https://www.sela.ru/?logout"));
+            logout = $(By.partialLinkText("?logout"));
 
     @Step("Открыть форму авторизации")
     public AuthorizationPage openFormOfAuthorization() {

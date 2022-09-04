@@ -64,7 +64,7 @@ task authorization_tests(type: Test) {
 
 task add_product_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "Add product"
+        includeTags "AddProduct"
     }
 }
 

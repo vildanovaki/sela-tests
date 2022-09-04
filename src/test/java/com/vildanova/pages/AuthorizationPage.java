@@ -2,6 +2,7 @@ package com.vildanova.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
@@ -15,7 +16,8 @@ public class AuthorizationPage {
             password = $("#password-enter"),
             submit = $("[type=submit]"),
             profile = $(".title__h1"),
-            passwordError = $(".js-password-error");
+            passwordError = $(".js-password-error"),
+            logout = $(By.xpath("//*[text() = 'Выйти']"));
 
     @Step("Открыть форму авторизации")
     public AuthorizationPage openFormOfAuthorization() {
@@ -44,6 +46,11 @@ public class AuthorizationPage {
     @Step("Проверить умпешную авторизацию")
     public void checkValidAuthorization() {
         profile.shouldHave(text("Личный кабинет"));
+    }
+
+    @Step("Выйти с личного кабинета")
+    public void logout() {
+        logout.click();
     }
 
     @Step("Проверить обязательность поля Логина")

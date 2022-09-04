@@ -3,6 +3,7 @@ package com.vildanova.tests;
 import com.vildanova.pages.AddProductToCardPage;
 import com.vildanova.pages.OpenPage;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,7 @@ public class AddToCardTests extends TestBase {
 
     @Test
     @Tag("AddProduct")
+    @DisplayName("Add product to cart")
     @Feature("Add product")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")

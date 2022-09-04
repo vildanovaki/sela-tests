@@ -3,6 +3,7 @@ package com.vildanova.tests;
 import com.vildanova.pages.FavoritePage;
 import com.vildanova.pages.OpenPage;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,7 @@ public class FavoritePageTests extends TestBase {
 
     @Test
     @Tag("Title")
+    @DisplayName("Check heading of empty favorite page")
     @Feature("Title")
     @Story("Test number one")
     @Owner("Vildanova Kamilya")
@@ -22,7 +24,7 @@ public class FavoritePageTests extends TestBase {
             "2) Выбрать город по умолчанию\n" +
             "3) Открыть страницу Избранное \n" +
             "4) Проверить заголовок об отсутствии товаров на странице.")
-    void checkTitleOfPageTest() {
+    void checkTitleOfEmptyFavoritePageTest() {
         openPage
                 .openPage()
                 .chooseCity();

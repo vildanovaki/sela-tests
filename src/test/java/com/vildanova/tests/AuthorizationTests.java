@@ -43,7 +43,8 @@ public class AuthorizationTests extends TestBase {
                 .enterLogin(credentials.trueLogin())
                 .enterPassword(credentials.truePassword())
                 .enter()
-                .checkValidAuthorization();
+                .checkValidAuthorization()
+                .logout();
     }
 
     @Test

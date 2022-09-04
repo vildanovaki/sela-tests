@@ -44,8 +44,9 @@ public class AuthorizationPage {
     }
 
     @Step("Проверить умпешную авторизацию")
-    public void checkValidAuthorization() {
+    public AuthorizationPage checkValidAuthorization() {
         profile.shouldHave(text("Личный кабинет"));
+        return this;
     }
 
     @Step("Выйти с личного кабинета")

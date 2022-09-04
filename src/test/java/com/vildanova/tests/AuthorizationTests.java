@@ -31,7 +31,8 @@ public class AuthorizationTests extends TestBase {
             "4) Ввести верный логин\n" +
             "5) Ввести верный пароль\n" +
             "6) Нажать на кнопку Войти\n" +
-            "7) Проверить переход в личный кабинет.")
+            "7) Проверить переход в личный кабинет\n" +
+            "8) Выйти с личного кабинета")
     void validAuthorizationTest() {
         openPage
                 .openPage()
@@ -156,7 +157,7 @@ public class AuthorizationTests extends TestBase {
             "5) Ввести не верный пароль\n" +
             "6) Нажать на кнопку Войти\n" +
             "7) Проверить вывод сообщения о неверном вводе логина или пароля.")
-     void wrongPasswordParameterizedTest(String login, String password) {
+    void wrongPasswordParameterizedTest(String login, String password) {
         openPage
                 .openPage()
                 .chooseCity();
@@ -168,6 +169,7 @@ public class AuthorizationTests extends TestBase {
                 .enter()
                 .checkWrongLoginOrPasswordOfAuthorization();
     }
+
     static Stream<Arguments> argsProviderFactory() {
         return Stream.of(
                 Arguments.of(

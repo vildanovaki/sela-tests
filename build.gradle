@@ -3,9 +3,6 @@ plugins {
     id 'io.qameta.allure' version '2.8.1'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
@@ -23,26 +20,26 @@ allure {
         version = allureVersion
     }
 }
+
 dependencies {
     testImplementation(
-            "org.junit.jupiter:junit-jupiter-api:5.7.0",
+            "org.aspectj:aspectjweaver:1.9.6",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
+            "com.github.javafaker:javafaker:1.0.2",
             "org.aeonbits.owner:owner:1.0.12",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
-            "org.assertj:assertj-core:3.19.0",
-            'org.junit.jupiter:junit-jupiter-params:5.7.2',
-            "com.github.javafaker:javafaker:1.0.2"
-    )
-
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-
+            "org.junit.jupiter:junit-jupiter:5.7.2",
+            "org.assertj:assertj-core:3.23.1",
+            'org.junit.jupiter:junit-jupiter-params:5.7.2')
+    testRuntimeOnly(
+            "org.slf4j:slf4j-simple:1.7.29",
+            "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
-test {
-    useJUnitPlatform()
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
-
 
 tasks.withType(Test) {
 //    systemProperty("environment", System.getProperty("environment", "stage")) // preprod, prod

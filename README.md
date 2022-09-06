@@ -48,6 +48,10 @@ ___
 
 ![](images/launches.png)
 
+### :newspaper: Настроена интеграция с Jira
+
+![](images/jira.png)
+
 ### :newspaper: По результату выполнения тестов отправляется уведомление в телеграм
 
 ![](images/telegram.png)

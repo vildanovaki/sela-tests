@@ -23,7 +23,6 @@ public class TitleTests extends TestBase {
     @DisplayName("Checking the title of site")
     @AllureId("12081")
     @Feature("Title")
-    @Story("Test number one")
     @Owner("Vildanova Kamilya")
     @Severity(SeverityLevel.TRIVIAL)
     @Link(name = "www.sela.ru", url = "https://www.sela.ru")

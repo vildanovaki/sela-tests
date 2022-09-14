@@ -17,7 +17,6 @@ public class AddToCardTests extends TestBase {
     @AllureId("12079")
     @DisplayName("Add product to cart")
     @Feature("Add product")
-    @Story("Test number one")
     @Owner("Vildanova Kamilya")
     @Severity(SeverityLevel.BLOCKER)
     @Link(name = "www.sela.ru", url = "https://www.sela.ru")

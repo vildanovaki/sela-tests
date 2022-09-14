@@ -17,7 +17,6 @@ public class FavoritePageTests extends TestBase {
     @AllureId("12082")
     @DisplayName("Check heading of empty favorite page")
     @Feature("Title")
-    @Story("Test number one")
     @Owner("Vildanova Kamilya")
     @Severity(SeverityLevel.TRIVIAL)
     @Link(name = "www.sela.ru", url = "https://www.sela.ru")

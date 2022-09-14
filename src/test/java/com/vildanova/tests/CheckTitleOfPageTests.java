@@ -17,7 +17,6 @@ public class CheckTitleOfPageTests extends TestBase {
     @AllureId("12083")
     @DisplayName("Check title of page with choosing subcategory")
     @Feature("Title")
-    @Story("Test number one")
     @Owner("Vildanova Kamilya")
     @Severity(SeverityLevel.TRIVIAL)
     @Link(name = "www.sela.ru", url = "https://www.sela.ru")

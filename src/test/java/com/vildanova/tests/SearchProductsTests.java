@@ -19,7 +19,6 @@ public class SearchProductsTests extends TestBase {
     @AllureId("12080")
     @DisplayName("Search a product")
     @Feature("Title")
-    @Story("Test number one")
     @Owner("Vildanova Kamilya")
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "www.sela.ru", url = "https://www.sela.ru")
